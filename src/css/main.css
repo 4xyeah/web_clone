@@ -38,7 +38,7 @@ img {
   overflow: hidden;
 }
 
-.wrapper > div {
+.wrap > div {
   border: 1px solid black;
   box-sizing: border-box;
 }
@@ -80,27 +80,27 @@ img {
   align-items: center;
 }
 
-.header-right > .textWrapper {
+.header-right > .textBox {
   align-items: flex-end;
   padding-right: 20px;
 }
 
-.header-right > .textWrapper > p:nth-child(1) {
+.header-right > .textBox > p:nth-child(1) {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-.header-right > .textWrapper > p:nth-child(2) {
+.header-right > .textBox > p:nth-child(2) {
   font-family: 'Montserrat', sans-serif;
   font-size: 29px;
   font-weight: 700;
 }
 
-.header-right > .imgWrapper > img {
+.header-right > .imgBox > img {
   width: 30px;
   height: 60px;
 }
 
-.menuWrapper {
+.navBox {
   justify-content: flex-end;
   padding-right: 40px;
 }
@@ -131,7 +131,7 @@ img {
 .body-right {
 }
 
-.textWrapper.body-left-upper {
+.textBox.body-left-upper {
   width: 600px;
   height: 200px;
   display: flex;
@@ -140,30 +140,30 @@ img {
   justify-content: space-around;
 }
 
-.textWrapper.body-left-lower {
+.textBox.body-left-lower {
   padding: 20px;
 }
 
-.textWrapper.body-left-upper > p:nth-child(1) {
+.textBox.body-left-upper > p:nth-child(1) {
   font-family: Gabelisa;
   font-size: 58px;
 }
-.textWrapper.body-left-upper > p:nth-child(2) {
+.textBox.body-left-upper > p:nth-child(2) {
   font-family: 'Fredericka the Great', cursive;
   font-size: 90px;
 }
-.textWrapper.body-left-upper > p:nth-child(3) {
+.textBox.body-left-upper > p:nth-child(3) {
   font-family: 'Montserrat', sans-serif;
   font-size: 27px;
   font-weight: 700;
 }
 
-.textWrapper.body-left-lower > div:nth-child(1) {
+.textBox.body-left-lower > div:nth-child(1) {
   font-family: 'Fredericka the Great', cursive;
   font-size: 19px;
   padding-right: 10px;
 }
-.textWrapper.body-left-lower > div:nth-child(2) {
+.textBox.body-left-lower > div:nth-child(2) {
   font-family: 'Fredericka the Great', cursive;
   font-size: 57px;
 }
@@ -177,7 +177,7 @@ img {
   width: 120px;
 }
 
-.buttonWrapper.body-left-lower > button {
+.buttonBox.body-left-lower > button {
   width: 227px;
   height: 58px;
   background: none;
@@ -186,16 +186,68 @@ img {
   border: 2px solid black;
 }
 
-.body-right > .imgWrapper {
+.body-right > .imgBox {
   width: 800px;
   height: 800px;
   padding-bottom: 50px;
 }
 
-.body-right > .imgWrapper > img {
+.body-right > .imgBox > img {
   width: 800px;
   height: 800px;
   object-fit: cover;
 }
 
 /* p-2 */
+
+.p-2 {
+  height: 110vh;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.p-2 > .textBox {
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.p-2 > .textBox > p:nth-child(1) {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 50px;
+}
+
+.p-2 > .textBox > p:nth-child(2) {
+  font-size: 17px;
+}
+
+.p-2 > .menuBox {
+  justify-content: center;
+  align-items: center;
+}
+
+.p-2 > .menuBox > .imgBox {
+  /* center aligned line background  */
+  background: url('/src/images/group2/g2_background.png') no-repeat center /
+    contain;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* p-3 */
+.p-3 {
+  height: 90vh;
+}
+/* p-4 */
+.p-4 {
+  height: 60vh;
+}
+/* p-5 */
+.p-5 {
+  height: 60vh;
+}
+/* p-6 */
+.p-6 {
+  height: 70vh;
+}
