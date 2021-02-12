@@ -1,253 +1,420 @@
 /* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap');
+
+@import url(//db.onlinewebfonts.com/c/1fbe10678e637530067167465205839f?family=Gabelisa);
 /*
   font-family: 'Montserrat', sans-serif;
   font-family: 'Fredericka the Great', cursive;
   */
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .d-flex {
-  display: flex;
+	display: flex;
 }
 
 .flex-column {
-  flex-flow: column;
+	flex-flow: column;
 }
 
 body {
-  font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: black;
+	font-size: 17px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: black;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 img {
-  overflow: hidden;
-  color: black;
+	overflow: hidden;
+	color: black;
+	vertical-align: top;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .wrapper {
-  width: 100vw;
-  display: flex;
-  flex-flow: column;
-  background-image: url('/src/images/background.png');
-  background-size: cover;
-  overflow: hidden;
+	width: 100vw;
+	display: flex;
+	flex-flow: column;
+	background-image: url('/src/images/background.png');
+	background-size: cover;
+	overflow: hidden;
 }
 
 .wrap > div {
-  border: 1px solid black;
-  box-sizing: border-box;
+	border: 1px solid black;
+	box-sizing: border-box;
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
+	width: 100vw;
+	height: 100vh;
 }
 
 /* p-1 , main page */
 
 .p-1 {
-  background: url('/src/images/group1/Rectangle.jpg') no-repeat;
-  background-size: cover;
-  /* background: no-repeat cover 50% 0 / cover; */
-  overflow: hidden;
+	background: url('/src/images/group1/Rectangle.jpg') no-repeat;
+	background-size: cover;
+	/* background: no-repeat cover 50% 0 / cover; */
+	overflow: hidden;
 }
 
 .mainHeader {
-  width: 100vw;
-  height: 15vh;
-  padding: 30px;
+	width: 100vw;
+	height: 15vh;
+	padding: 30px;
 }
 
 .header {
-  width: 100vw;
-  /* padding-right: 50px; */
-  justify-content: space-between;
+	width: 100vw;
+	/* padding-right: 50px; */
+	justify-content: space-between;
 }
 
 #logo {
-  width: 280px;
-  height: 80px;
+	width: 280px;
+	height: 80px;
 }
 
 .header-right {
-  width: 350px;
-  justify-content: flex-start;
-  align-items: center;
+	width: 350px;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .header-right > .textBox {
-  align-items: flex-end;
-  padding-right: 20px;
+	align-items: flex-end;
+	padding-right: 20px;
 }
 
 .header-right > .textBox > p:nth-child(1) {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+	font: bold 'Montserrat', sans-serif;
 }
 .header-right > .textBox > p:nth-child(2) {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 29px;
-  font-weight: 700;
+	font: bold 29px 'Montserrat', sans-serif;
 }
 
 .header-right > .imgBox > img {
-  width: 30px;
-  height: 60px;
+	width: 30px;
+	height: 60px;
 }
 
 .navBox {
-  justify-content: flex-end;
-  padding-right: 40px;
+	justify-content: flex-end;
+	padding-right: 40px;
 }
 
 .topMenu {
-  align-items: baseline;
-  justify-content: flex-start;
+	align-items: baseline;
+	justify-content: flex-start;
 }
 .topMenu > li {
-  margin: 0 30px;
-  padding-right: 30px;
-  list-style: none;
-  font-weight: 700;
+	margin: 0 30px;
+	padding-right: 30px;
+	list-style: none;
+	font-weight: 700;
 }
 
 /* main-body */
 .main-body {
-  width: 100vw;
-  height: 80vh;
-  align-items: center;
+	width: 100vw;
+	height: 80vh;
+	align-items: center;
 }
 
 .body-left {
-  text-align: center;
-  padding: 0 0 100px 100px;
+	text-align: center;
+	padding: 0 0 100px 100px;
 }
 
 .body-right {
 }
 
 .textBox.body-left-upper {
-  width: 600px;
-  height: 200px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-around;
+	width: 600px;
+	height: 200px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .textBox.body-left-lower {
-  padding: 20px;
+	padding: 20px;
 }
 
 .textBox.body-left-upper > p:nth-child(1) {
-  font-family: Gabelisa;
-  font-size: 58px;
+	font-family: Gabelisa;
+	font-size: 58px;
 }
 .textBox.body-left-upper > p:nth-child(2) {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 90px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 90px;
 }
 .textBox.body-left-upper > p:nth-child(3) {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px;
-  font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	font-weight: 700;
 }
 
 .textBox.body-left-lower > div:nth-child(1) {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 19px;
-  padding-right: 10px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 19px;
+	padding-right: 10px;
 }
 .textBox.body-left-lower > div:nth-child(2) {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 57px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 57px;
 }
 
 .body-left-lower {
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .body-left-lower > div:nth-child(1) {
-  width: 120px;
+	width: 120px;
 }
 
 .buttonBox.body-left-lower > button {
-  width: 227px;
-  height: 58px;
-  background: none;
-  font-size: 21px;
-  font-weight: 800;
-  border: 2px solid black;
+	width: 227px;
+	height: 58px;
+	background: none;
+	font-size: 21px;
+	font-weight: 800;
+	border: 2px solid black;
 }
 
 .body-right > .imgBox {
-  width: 800px;
-  height: 800px;
-  padding-bottom: 50px;
+	width: 800px;
+	height: 800px;
+	padding-bottom: 50px;
 }
 
 .body-right > .imgBox > img {
-  width: 800px;
-  height: 800px;
-  object-fit: cover;
+	width: 800px;
+	height: 800px;
+	object-fit: cover;
 }
 
 /* p-2 */
 
 .p-2 {
-  height: 110vh;
-  align-items: center;
-  padding: 50px 0;
+	/* center aligned line background  */
+	background: url('/src/images/group2/g2_background.png') no-repeat center /
+		contain;
+	height: 115vh;
+	align-items: center;
+	padding-top: 60px;
 }
 
-.p-2 > .textBox {
-  height: 15vh;
-  justify-content: space-around;
-  align-items: center;
+.p-2 > .title {
+	height: 15vh;
+	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 30px;
 }
 
 .p-2 > .textBox > p:nth-child(1) {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 50px;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 50px;
 }
 
 .p-2 > .textBox > p:nth-child(2) {
-  font-size: 17px;
+	font-size: 17px;
+	line-height: 29px;
 }
 
-.p-2 > .menuBox {
-  justify-content: center;
-  align-items: center;
+.p-2 .menuBox {
+	width: 100vw;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.p-2 > .menuBox > .imgBox {
-  /* center aligned line background  */
-  background: url('/src/images/group2/g2_background.png') no-repeat center /
-    contain;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
+.p-2 .menuImg {
+	width: 400px;
+	height: 400px;
 }
 
+.p-2 .menuName {
+	font: bold 21px 'Montserrat';
+	line-height: 38px;
+}
+.p-2 .menuBox div {
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.p-2 .menuBox div p {
+	width: 400px;
+	line-height: 21px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.p-2 .menuBox .orderBtn {
+	width: 200px;
+	height: 50px;
+	font: 17px 'Montserrat';
+	font-weight: 700;
+	line-height: 38px;
+	border: none;
+	background-color: #ffdf01;
+	cursor: pointer;
+}
 /* p-3 */
 .p-3 {
-  height: 90vh;
+	height: 90vh;
+	padding: 30px 0;
 }
+
+.p-3 .textBox {
+	align-items: center;
+}
+
+.p-3 .textBox p:nth-child(1) {
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 46px;
+}
+
+.p-3 .textBox p:nth-child(2) {
+	font: 42px 'Fredericka the Great';
+	line-height: 46px;
+}
+
+.p-3 .textBox p:nth-child(4) {
+	width: 70vw;
+	line-height: 25px;
+	text-align: center;
+}
+
+.slideBox {
+	width: 100vw;
+	height: 100vh;
+	padding: 30px 0;
+	align-items: center;
+}
+
+.slide {
+}
+
+.slide ul {
+	width: 100vw;
+	height: 50vh;
+	border: 1px solid green;
+}
+
+.slide ul li {
+	display: inline-block;
+}
+
+.slide ul li:nth-child(1) {
+	/* width: 30vw; */
+}
+.slide ul li:nth-child(2) {
+	/* width: 40vw; */
+}
+.slide ul li:nth-child(3) {
+	/* width: 30vw; */
+}
+
+.slide ul li img {
+	object-fit: cover;
+	width: 500px;
+	height: 300px;
+}
+
+.slideBox .buttonBox {
+	width: 80px;
+	height: 20px;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.slideBox .buttonBox button {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #dcdcdc;
+	border: none;
+	cursor: pointer;
+}
+
+/* 여기서 그 itemList 쓰면 되는 거 아닐까 배열 */
+.slideBox .buttonBox button:nth-child(2) {
+	background-color: #ffe001;
+}
+
 /* p-4 */
 .p-4 {
-  height: 60vh;
+	height: 90vh;
+	padding: 80px 120px;
 }
+
+.p-4 .imgBox {
+	justify-content: space-around;
+}
+
+.p-4 .imgBox .idx-2 {
+	justify-content: space-between;
+	align-items: center;
+}
+
 /* p-5 */
 .p-5 {
-  height: 60vh;
+	height: 70vh;
+	padding: 30px 50px;
+	align-items: center;
+}
+
+.p-5 .textBox {
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.p-5 .textBox p:nth-child(1) {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.p-5 .textBox p:nth-child(2) {
+	font-family: 'Fredericka the Great';
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+
+.reservation {
+	width: 70%;
+	text-align: center;
+}
+
+.reservation .bookingBtn {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #ffe001;
 }
 /* p-6 */
 .p-6 {
-  height: 70vh;
+	height: 70vh;
 }
