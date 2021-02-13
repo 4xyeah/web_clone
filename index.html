@@ -13,7 +13,11 @@
 				<header class="mainHeader d-flex flex-column">
 					<div class="header d-flex">
 						<div class="header-left d-flex">
-							<img id="logo" src="/src/images/group1/mainLogo.png" alt="logo" />
+							<img
+								id="logo"
+								src="/src/images/group1/g1_logo.png"
+								alt="websiteLogo"
+							/>
 						</div>
 						<div class="header-right d-flex">
 							<div class="textBox call d-flex flex-column">
@@ -21,7 +25,7 @@
 								<p>1800 800 888</p>
 							</div>
 							<div class="imgBox d-flex">
-								<img src="/src/images/group1/iPhone.png" alt="icon-iPhone" />
+								<img src="/src/images/group1/g1_iPhone.png" alt="iPhone" />
 							</div>
 						</div>
 					</div>
@@ -45,7 +49,7 @@
 							<p>LET START TO ORDER FOOD NOW</p>
 						</div>
 						<div class="imgBox body-left-upper">
-							<img src="/src/images/group1/Shape.png" alt="line" />
+							<img src="/src/images/group1/g1_shape.png" alt="line" />
 						</div>
 						<div class="textBox body-left-lower d-flex">
 							<div>THIS MONDAY HAPPY HOURS</div>
@@ -56,8 +60,8 @@
 						</div>
 					</div>
 					<div class="body-right d-flex">
-						<div class="imgBox">
-							<img src="/src/images/group1/mainImg.png" alt="creamPasta" />
+						<div class="imgBox d-flex">
+							<img src="/src/images/group1/g1_mainDish.png" alt="creamPasta" />
 						</div>
 					</div>
 				</div>
@@ -167,44 +171,75 @@
 			<div class="container p-5 d-flex flex-column">
 				<div class="textBox d-flex flex-column">
 					<p>RESERVATION</p>
+					<br />
 					<p>BOOK YOUR TABLE</p>
 				</div>
 				<!-- end of textBox-->
 				<!-- center a table -->
 				<div class="reservation">
-					<form>
+					<form action="POST">
 						<table>
 							<tr>
 								<td>
-									<label for="name">Name</label
-									><input class="bookingInfo" name="name" type="text" />
+									<label for="name"
+										><input
+											class="bookingInfo"
+											placeholder="Name"
+											name="name"
+											type="text"
+									/></label>
 								</td>
 								<td>
-									<label for="email">Email</label
-									><input class="bookingInfo" name="email" type="email" />
+									<label for="email"
+										><input
+											class="bookingInfo"
+											placeholder="Email"
+											name="email"
+											type="email"
+									/></label>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="date">Date</label
-									><input class="bookingInfo" name="date" type="date" />
+									<label for="date"
+										><input
+											class="bookingInfo"
+											placeholder="Date"
+											name="date"
+											type="text"
+											onfocus="(this.type='date')"
+									/></label>
 								</td>
 								<td>
-									<label for="time">Time</label
-									><input class="bookingInfo" name="time" type="time" />
+									<label for="time"
+										><input
+											class="bookingInfo"
+											placeholder="Time"
+											name="time"
+											type="text"
+											onfocus="(this.type='time')"
+									/></label>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<label for="people">People</label
-									><input class="bookingInfo" name="people" type="number" />
+									<label for="people"
+										><input
+											class="bookingInfo"
+											placeholder="People"
+											name="people"
+											type="number"
+									/></label>
 								</td>
 								<td>
-									<input
-										class="bookingBtn"
-										type="submit"
-										value="FIND A TABLE"
-									/>
+									<label for="bookingBtn">
+										<input
+											class="bookingBtn"
+											name="bookingBtn"
+											type="submit"
+											value="FIND A TABLE"
+										/>
+									</label>
 								</td>
 							</tr>
 						</table>
@@ -212,10 +247,56 @@
 				</div>
 			</div>
 			<!-- end of p-5-->
-			<div class="container p-6">
-				<a href="https://www.freepik.com/psd/food"
-					>Food psd created by freepik - www.freepik.com</a
-				>
+			<div class="container p-6 footer d-flex flex-column">
+				<div class="footer-top d-flex">
+					<div class="footer-left d-flex flex-column">
+						<img
+							class="logo"
+							src="/src/images/group6/g6_logo.png"
+							alt="websiteLogo"
+						/>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+							quas blanditiis asperiores id ratione soluta vel cumque nihil
+							architecto dignissimos laudantium, assumenda nulla vero
+							perspiciatis pariatur unde earum incidunt at?
+						</p>
+					</div>
+					<!-- end of footer-left-->
+					<div class="footer-right d-flex flex-column">
+						<div class="companyInfo d-flex flex-column">
+							<div class="companyAdress d-flex">
+								<img
+									src="/src/images/group6/g6_location.png"
+									alt="locationIcon"
+								/>
+								<p>Main Road, Building Name, Country</p>
+							</div>
+							<div class="companyEmail d-flex">
+								<img src="/src/images/group6/g6_email.png" alt="emailIcon" />
+								<p>info@companyname.com</p>
+							</div>
+						</div>
+						<!-- end of companyInfo-->
+					</div>
+					<!-- end of footer-right-->
+				</div>
+				<div class="footer-bottom d-flex">
+					<p>
+						<a href="https://www.freepik.com/psd/food"
+							>Food psd created by freepik - www.freepik.com</a
+						>
+					</p>
+					<div class="snsBox d-flex">
+						<img
+							src="/src/images/group6/g6_instagram.png"
+							alt="instagramIcon"
+						/>
+						<img src="/src/images/group6/g6_facebook.png" alt="facebookIcon" />
+						<img src="/src/images/group6/g6_twitter.png" alt="twitterIcon" />
+						<img src="/src/images/group6/g6_whatsApp.png" alt="whatsAppIcon" />
+					</div>
+				</div>
 			</div>
 			<!-- end of p-6-->
 		</div>

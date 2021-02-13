@@ -1,6 +1,6 @@
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
 @import url(//db.onlinewebfonts.com/c/1fbe10678e637530067167465205839f?family=Gabelisa);
 /*
   font-family: 'Montserrat', sans-serif;
@@ -48,13 +48,12 @@ img {
 	width: 100vw;
 	display: flex;
 	flex-flow: column;
-	background-image: url('/src/images/background.png');
+	background: no-repeat url('/src/images/background.png');
 	background-size: cover;
 	overflow: hidden;
 }
 
-.wrap > div {
-	border: 1px solid black;
+.wrap div {
 	box-sizing: border-box;
 }
 
@@ -63,19 +62,20 @@ img {
 	height: 100vh;
 }
 
-/* p-1 , main page */
+/* =============== p-1 , main page ===============*/
 
 .p-1 {
-	background: url('/src/images/group1/Rectangle.jpg') no-repeat;
+	background: url('/src/images/group1/g1_background.jpg') no-repeat;
 	background-size: cover;
 	/* background: no-repeat cover 50% 0 / cover; */
 	overflow: hidden;
+	padding: 30px 50px;
 }
 
 .mainHeader {
 	width: 100vw;
 	height: 15vh;
-	padding: 30px;
+	/* padding: 30px; */
 }
 
 .header {
@@ -101,7 +101,7 @@ img {
 }
 
 .header-right > .textBox > p:nth-child(1) {
-	font: bold 'Montserrat', sans-serif;
+	font: bold 17px 'Montserrat', sans-serif;
 }
 .header-right > .textBox > p:nth-child(2) {
 	font: bold 29px 'Montserrat', sans-serif;
@@ -133,14 +133,16 @@ img {
 	width: 100vw;
 	height: 80vh;
 	align-items: center;
+	padding: 30px;
 }
 
 .body-left {
 	text-align: center;
-	padding: 0 0 100px 100px;
 }
 
-.body-right {
+.body-left .imgBox {
+	margin: 20px;
+	padding: 0;
 }
 
 .textBox.body-left-upper {
@@ -151,33 +153,29 @@ img {
 	align-items: center;
 	justify-content: space-around;
 }
-
-.textBox.body-left-lower {
-	padding: 20px;
-}
-
 .textBox.body-left-upper > p:nth-child(1) {
-	font-family: Gabelisa;
+	font-family: 'Gabelisa';
 	font-size: 58px;
 }
 .textBox.body-left-upper > p:nth-child(2) {
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 90px;
+	font: 90px 'Fredericka the Great', cursive;
 }
 .textBox.body-left-upper > p:nth-child(3) {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 27px;
-	font-weight: 700;
+	font: bold 27px 'Montserrat', sans-serif;
 }
 
+.textBox.body-left-lower {
+	margin-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+}
 .textBox.body-left-lower > div:nth-child(1) {
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 19px;
-	padding-right: 10px;
+	font: 19px 'Fredericka the Great', cursive;
+	margin-right: 10px;
+	width: 150px;
 }
 .textBox.body-left-lower > div:nth-child(2) {
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 57px;
+	font: 57px 'Fredericka the Great', cursive;
 }
 
 .body-left-lower {
@@ -193,30 +191,35 @@ img {
 	width: 227px;
 	height: 58px;
 	background: none;
-	font-size: 21px;
+	font: 21px 'Montserrat', sans-serif;
 	font-weight: 800;
 	border: 2px solid black;
+	cursor: pointer;
 }
 
+.body-right {
+	padding: 50px 0 0 100px;
+}
 .body-right > .imgBox {
-	width: 800px;
-	height: 800px;
-	padding-bottom: 50px;
+	width: 500px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
 }
 
 .body-right > .imgBox > img {
-	width: 800px;
-	height: 800px;
+	width: 500px;
+	height: 500px;
 	object-fit: cover;
 }
 
-/* p-2 */
+/* =============== p-2 ===============*/
 
 .p-2 {
 	/* center aligned line background  */
 	background: url('/src/images/group2/g2_background.png') no-repeat center /
 		contain;
-	height: 115vh;
+	height: 110vh;
 	align-items: center;
 	padding-top: 60px;
 }
@@ -241,12 +244,13 @@ img {
 .p-2 .menuBox {
 	width: 100vw;
 	justify-content: space-around;
-	align-items: center;
+	padding-top: 40px;
 }
 
 .p-2 .menuImg {
 	width: 400px;
 	height: 400px;
+	object-fit: cover;
 }
 
 .p-2 .menuName {
@@ -268,17 +272,16 @@ img {
 .p-2 .menuBox .orderBtn {
 	width: 200px;
 	height: 50px;
-	font: 17px 'Montserrat';
-	font-weight: 700;
+	font: bold 17px 'Montserrat';
 	line-height: 38px;
 	border: none;
 	background-color: #ffdf01;
 	cursor: pointer;
 }
-/* p-3 */
+/* =============== p-3 ===============*/
 .p-3 {
-	height: 90vh;
-	padding: 30px 0;
+	height: 100vh;
+	padding: 100px 0;
 }
 
 .p-3 .textBox {
@@ -286,8 +289,7 @@ img {
 }
 
 .p-3 .textBox p:nth-child(1) {
-	font-size: 21px;
-	font-weight: 700;
+	font: bold 21px 'Montserrat', sans-serif;
 	letter-spacing: 1px;
 	line-height: 46px;
 }
@@ -363,9 +365,9 @@ img {
 	background-color: #ffe001;
 }
 
-/* p-4 */
+/* =============== p-4 ===============*/
 .p-4 {
-	height: 90vh;
+	height: 80vh;
 	padding: 80px 120px;
 }
 
@@ -378,7 +380,7 @@ img {
 	align-items: center;
 }
 
-/* p-5 */
+/* =============== p-5 ===============*/
 .p-5 {
 	height: 70vh;
 	padding: 30px 50px;
@@ -387,34 +389,97 @@ img {
 
 .p-5 .textBox {
 	align-items: center;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .p-5 .textBox p:nth-child(1) {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 21px;
-	font-weight: 700;
+	font: bold 21px 'Montserrat', sans-serif;
 	letter-spacing: 1px;
 }
-.p-5 .textBox p:nth-child(2) {
+.p-5 .textBox p:nth-child(3) {
 	font-family: 'Fredericka the Great';
 	font-size: 50px;
 	letter-spacing: 3px;
 }
 
 .reservation {
-	width: 70%;
-	text-align: center;
+	width: 50vw;
+	display: flex;
+	justify-content: center;
 }
 
-.reservation .bookingBtn {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 21px;
-	font-weight: 700;
+.bookingInfo {
+	width: 300px;
+	height: 30px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 10px;
+}
+
+/* 미묘하게 line-height 다름, 수정 */
+.bookingBtn {
+	width: 330px;
+	height: 50px;
+	font: bold 21px 'Montserrat', sans-serif;
+	border: none;
 	border-radius: 5px;
 	background-color: #ffe001;
+	padding: 10px 15px;
+	margin: 10px;
 }
-/* p-6 */
+/* =============== p-6 ===============*/
 .p-6 {
 	height: 70vh;
+	background: no-repeat url('/src/images/group6/g6_background.png');
+	background-size: cover;
+	padding: 50px 70px;
+}
+.p-6 p {
+	color: white;
+	line-height: 25px;
+}
+
+.p-6 a {
+	color: white;
+}
+
+.footer-top {
+	height: 50vh;
+	justify-content: space-between;
+}
+
+.footer-left {
+	width: 35vw;
+	height: 30vh;
+	justify-content: space-between;
+}
+
+.footer-left .logo {
+	width: 18vw;
+	height: 10vh;
+}
+
+.footer-right {
+	width: 35vw;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.companyAdress,
+.companyEmail {
+	padding: 10px 0;
+}
+
+.companyInfo div img {
+	margin-right: 20px;
+}
+
+.footer-bottom {
+	justify-content: space-between;
+}
+
+.footer-bottom .snsBox {
+	width: 10vw;
+	justify-content: space-around;
 }
