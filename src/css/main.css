@@ -12,7 +12,7 @@ a {
 	color: black;
 }
 
-.d-flex {
+.flex {
 	display: flex;
 }
 
@@ -38,13 +38,18 @@ img {
 	vertical-align: top;
 }
 
+div {
+	display: flex;
+	box-sizing: border-box;
+}
+
 .clearfix:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-.wrapper {
+.wrap {
 	width: 100vw;
 	display: flex;
 	flex-flow: column;
@@ -53,13 +58,10 @@ img {
 	overflow: hidden;
 }
 
-.wrap div {
-	box-sizing: border-box;
-}
-
 .container {
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 }
 
 /* =============== p-1 , main page ===============*/
@@ -368,16 +370,17 @@ img {
 /* =============== p-4 ===============*/
 .p-4 {
 	height: 80vh;
-	padding: 80px 120px;
+	padding: 80px 0;
+	justify-content: center;
 }
 
 .p-4 .imgBox {
-	justify-content: space-around;
+	width: 80vw;
+	justify-content: space-between;
 }
 
 .p-4 .imgBox .idx-2 {
 	justify-content: space-between;
-	align-items: center;
 }
 
 /* =============== p-5 ===============*/
@@ -482,4 +485,21 @@ img {
 .footer-bottom .snsBox {
 	width: 10vw;
 	justify-content: space-around;
+}
+
+/* ====================================== */
+
+#topBtn {
+	width: 50px;
+	height: 50px;
+	font-size: 30px;
+	text-align: center;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	cursor: pointer;
+}
+
+.white {
+	color: white;
 }
