@@ -17,10 +17,7 @@ let changeTopBtnColor = function (windowScrollY) {
 	const footerTop = footer.offsetTop;
 	const footerHeight = footer.offsetHeight;
 
-	if (
-		footerTop <= topBtn.offsetTop + windowScrollY &&
-		topBtn.offsetTop + windowScrollY <= footerTop + footerHeight
-	) {
+	if (footerTop <= topBtn.offsetTop + windowScrollY && topBtn.offsetTop + windowScrollY <= footerTop + footerHeight) {
 		topBtn.classList.add('white');
 	} else {
 		topBtn.classList.remove('white');
@@ -29,7 +26,6 @@ let changeTopBtnColor = function (windowScrollY) {
 	console.log(`topBtn top 위치: ${topBtn.offsetTop + windowScrollY} `);
 };
 
-// 위치 비교 위한 스크롤 위치값
 let last_known_scroll_position = 0;
 let ticking = false;
 
@@ -45,3 +41,37 @@ document.addEventListener('scroll', function (e) {
 		ticking = true;
 	}
 });
+
+// 이미지 클릭시 회전
+const rotateImg = function () {
+	const imgArr = document.querySelectorAll('.p-1 .img');
+
+	const p1_img = Array.from(imgArr);
+	const rotation_deg = 50;
+	for (let img of p1_img) {
+		img.onclick = function () {
+			let current_deg = this.style.transform == '' ? 0 : Number(this.style.transform.slice(7, -4));
+			let final_deg = current_deg + rotation_deg;
+			this.style.transform = `rotate(${final_deg}deg)`;
+		};
+	}
+};
+
+rotateImg();
+
+// setInterval, setTimeout 사용해서 이미지 각도바꾸기
+// 수정
+const buzzIphone = function () {
+	const iPhone = document.getElementById('iPhone');
+	iPhone.onclick = function () {
+		iPhone.style.transform = 'rotate(20deg)';
+		setTimeout(function () {
+			iPhone.style.transform = 'rotate(340deg)';
+			setTimeout(function () {
+				iPhone.style.transform = 'rotate(20deg)';
+			}, 500);
+		}, 500);
+	};
+};
+
+buzzIphone();

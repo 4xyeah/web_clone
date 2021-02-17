@@ -215,6 +215,33 @@ div {
 	object-fit: cover;
 }
 
+.p-1 .img {
+	padding: 0;
+	position: absolute;
+	background: none;
+	cursor: pointer;
+}
+
+.leaf {
+	top: 180px;
+	left: 100px;
+}
+
+.leaf2 {
+	bottom: 40px;
+	right: 150px;
+}
+
+.tomato {
+	bottom: 20px;
+	right: 750px;
+}
+
+.pasta {
+	top: 170px;
+	left: 700px;
+}
+
 /* =============== p-2 ===============*/
 
 .p-2 {
